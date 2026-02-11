@@ -1,10 +1,47 @@
 .about-cards {
-    display: grid;
+    max-width: 1024px;
+    grid-template-areas:
+        "intro intro intro skills"
+        "intro intro intro skills"
+        "contact clock projects skills"
+        "contact clock writings credits"
+    ;
 }
 
 .about-cards>div {
     background-color: var(--card-bg-col);
-    border: 3px solid var(--card-border-col);
+    border: 2px solid transparent;
     border-radius: 8px;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.intro-card {
+    grid-area: intro;
+}
+
+.skills-card {
+    grid-area: skills;
+}
+
+.contact-card {
+    grid-area: contact;
+}
+
+.clock-card {
+    grid-area: clock;
+}
+
+.projects-card {
+    grid-area: projects;
+}
+
+.writings-card {
+    grid-area: writings;
+}
+
+.credits-card {
+    grid-area: credits;
 }

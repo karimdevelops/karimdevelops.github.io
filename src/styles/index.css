@@ -75,6 +75,14 @@
     justify-items: center;
 }
 
+.grid-gap-5 {
+    gap: 5px;
+}
+
+.grid-gap-10 {
+    gap: 10px;
+}
+
 .grid-gap-20 {
     gap: 20px;
 }
