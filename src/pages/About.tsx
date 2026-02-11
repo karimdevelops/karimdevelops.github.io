@@ -4,6 +4,7 @@ import "../styles/About.css";
 import openSvg from "../assets/open.svg";
 import UserClock from "../components/UserClock";
 import MyClock from "../components/MyClock";
+import SocialButtons from "../components/SocialButtons";
 
 export default function About() {
   return (
@@ -23,6 +24,7 @@ export default function About() {
             Feel free to reach out if you want to work with me or just for chat
             :)
           </p>
+          <SocialButtons />
         </div>
         <div className="skills-card">
           <h3>Technologies I use</h3>

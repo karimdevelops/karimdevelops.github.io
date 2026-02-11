@@ -122,6 +122,17 @@
 
 }
 
+.social-icon {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    box-shadow: 3px 3px 0 4px var(--txt-col);
+}
+
+img.social-icon {
+    height: 32px;
+    width: 32px;
+}
+
 body {
     color: var(--txt-col);
     background-color: var(--bg-col);
