@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 
 import "../styles/About.css";
 import openSvg from "../assets/open.svg";
+import UserClock from "../components/UserClock";
 
 export default function About() {
   return (
@@ -58,12 +59,17 @@ export default function About() {
             </ul>
           </div>
         </div>
-        <div className="clock-card"></div>
+        <div className="clock-card">
+          <p className="text-light">my time</p>
+          <p className="text-light">your time</p>
+          <UserClock />
+        </div>
         <Link className="projects-card flex flex-sp-between" to="/projects">
           <h3>projects</h3>
           <img src={openSvg} alt="open" />
         </Link>
         <a
+          target="_blank"
           href="https://dev.to/karimdevelops"
           className="writings-card flex flex-sp-between"
         >

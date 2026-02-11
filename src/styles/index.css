@@ -96,6 +96,8 @@
 }
 
 .text-light {
+    font-size: 1.15rem;
+    font-weight: 400;
     color: var(--txt-light-col);
 }
 
@@ -110,7 +112,7 @@
 body {
     color: var(--txt-col);
     background-color: var(--bg-col);
-    font-size: 1.25rem;
+    font-size: 1.20rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
