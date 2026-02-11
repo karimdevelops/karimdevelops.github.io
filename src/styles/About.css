@@ -5,7 +5,8 @@
         "intro intro intro skills"
         "contact clock projects skills"
         "contact clock writings skills"
-        "contact theme now credits"
+        "contact clock theme skills"
+        "now now now credits"
     ;
 }
 
@@ -54,4 +55,8 @@
 
 .credits-card {
     grid-area: credits;
+}
+
+.now-card {
+    grid-area: now;
 }

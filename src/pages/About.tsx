@@ -26,12 +26,6 @@ export default function About() {
         </div>
         <div className="skills-card">
           <h3>Technologies I use</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga,
-            iusto! Consequuntur ducimus assumenda corrupti, eligendi repellat
-            quia quasi ipsam incidunt expedita ad dolor, laboriosam, sequi
-            voluptatem error voluptatum aperiam architecto?
-          </p>
         </div>
         <div className="contact-card">
           <h4>let's start working together</h4>
@@ -72,19 +66,22 @@ export default function About() {
         <div className="theme-card">
           <h3>pick theme</h3>
         </div>
-        <Link className="projects-card flex flex-sp-between" to="/projects">
+        <Link
+          className="projects-card flex flex-sp-between flex-items-center"
+          to="/projects"
+        >
           <h3>projects</h3>
           <img src={openSvg} alt="open" height={24} width={24} />
         </Link>
         <a
           target="_blank"
           href="https://dev.to/karimdevelops"
-          className="writings-card flex flex-sp-between"
+          className="writings-card flex flex-sp-between flex-items-center"
         >
           <h3>writings</h3>
           <img src={openSvg} alt="open" height={24} width={24} />
         </a>
-        <div>
+        <div className="now-card">
           <h3>
             now{" "}
             <a
@@ -95,7 +92,10 @@ export default function About() {
               what's that
             </a>
           </h3>
-          <p className="text-small">Currently studying: BS SE</p>
+          <p>
+            Currently completing my bachelors in Software Engineering (SE) and
+            building stuff
+          </p>
         </div>
         <div className="credits-card">
           <p className="text-light">© 2026 | inspired by:</p>
