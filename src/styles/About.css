@@ -3,10 +3,9 @@
     grid-template-areas:
         "intro intro intro skills"
         "intro intro intro skills"
-        "contact clock projects skills"
-        "contact clock writings skills"
-        "contact clock theme skills"
-        "now now now credits"
+        "clock projects now skills"
+        "clock writings now skills"
+        "clock theme credits skills"
     ;
 }
 

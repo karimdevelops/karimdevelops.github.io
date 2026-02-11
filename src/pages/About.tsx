@@ -29,36 +29,6 @@ export default function About() {
         <div className="skills-card">
           <h3>Technologies I use</h3>
         </div>
-        <div className="contact-card">
-          <h4>let's start working together</h4>
-          <div className="flex flex-column flex-gap-5">
-            <p className="text-light">Contact Details</p>
-            <a
-              className="text-small text-italic"
-              href="mailto:karimdevelops@gmail.com"
-            >
-              karim.develops@gmail.com
-            </a>
-          </div>
-          <div className="flex flex-column flex-gap-5">
-            <p className="text-light">Socials</p>
-            <ul className="flex flex-column flex-gap-5">
-              <li>
-                <a target="_blank" href="https://www.github.com/karimdevelops">
-                  Github
-                </a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/in/karimdevelops"
-                >
-                  Linkedin
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
         <div className="clock-card">
           <p className="text-light">my time</p>
           <MyClock />
@@ -94,16 +64,15 @@ export default function About() {
               what's that
             </a>
           </h3>
-          <p>
-            Currently completing my bachelors in Software Engineering (SE) and
-            building stuff
-          </p>
+          <p className="text-small">doing Bachelors in SE & building stuff</p>
         </div>
         <div className="credits-card">
-          <p className="text-light">© 2026 | inspired by:</p>
-          <a href="https://github.com/Ladvace/astro-bento-portfolio">
-            click here
-          </a>
+          <span className="text-light text-small">
+            © 2026 |{" "}
+            <a href="https://github.com/Ladvace/astro-bento-portfolio">
+              Bento Portfolio
+            </a>
+          </span>
         </div>
       </div>
     </>
