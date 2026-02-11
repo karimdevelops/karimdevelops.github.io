@@ -5,7 +5,7 @@ export const Route = createRootRoute({ component: RootLayout });
 function RootLayout() {
   return (
     <>
-      <div className="flex flex-center mheight-70">
+      <div className="flex flex-center mheight-80">
         <Outlet></Outlet>
       </div>
     </>
