@@ -3,6 +3,7 @@ import { Link } from "@tanstack/react-router";
 import "../styles/About.css";
 import openSvg from "../assets/open.svg";
 import UserClock from "../components/UserClock";
+import MyClock from "../components/MyClock";
 
 export default function About() {
   return (
@@ -61,6 +62,7 @@ export default function About() {
         </div>
         <div className="clock-card">
           <p className="text-light">my time</p>
+          <MyClock />
           <p className="text-light">your time</p>
           <UserClock />
         </div>

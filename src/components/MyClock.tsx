@@ -12,10 +12,12 @@ export default function UserClock() {
     };
   }, []);
 
+  const tz = "Asia/Karachi";
   const formattedTime = new Intl.DateTimeFormat("en-US", {
     hour: "numeric",
     minute: "numeric",
     second: "numeric",
+    timeZone: tz,
   }).format(time);
 
   return (
