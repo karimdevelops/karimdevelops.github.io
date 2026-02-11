@@ -4,11 +4,13 @@
         "intro intro intro skills"
         "intro intro intro skills"
         "contact clock projects skills"
-        "contact clock writings credits"
+        "contact clock writings skills"
+        "contact clock theme credits"
     ;
 }
 
-.about-cards>div {
+.about-cards>div,
+.about-cards>a {
     background-color: var(--card-bg-col);
     border: 2px solid transparent;
     border-radius: 8px;
@@ -16,6 +18,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.about-cards>a {
+    flex-direction: row;
 }
 
 .intro-card {
@@ -40,6 +46,10 @@
 
 .writings-card {
     grid-area: writings;
+}
+
+.theme-card {
+    grid-area: theme;
 }
 
 .credits-card {

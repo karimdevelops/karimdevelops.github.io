@@ -117,3 +117,12 @@ body {
 h2 {
     font-size: 3rem;
 }
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--txt-col);
+}
