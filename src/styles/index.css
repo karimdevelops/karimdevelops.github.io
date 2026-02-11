@@ -1,3 +1,12 @@
+:root {
+    --txt-col: #000000;
+    --txt-light-col: #0000008a;
+    --bg-col: #DFDFDF;
+
+    --card-bg-col: rgba(0, 0, 0, 10%);
+    --card-border-col: #6f6f6f;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -70,11 +79,33 @@
     gap: 20px;
 }
 
+.mheight-70 {
+    min-height: 70vh;
+}
+
 .padd-1 {
     padding: 1rem;
 }
 
+.text-light {
+    color: var(--txt-light-col);
+}
+
+.text-gradient {
+    max-width: max-content;
+    background-image: linear-gradient(60deg, #000000 10%, #939393);
+    background-clip: text;
+    color: transparent;
+
+}
+
 body {
-    color: whitesmoke;
-    background-color: #1e1e1e;
+    color: var(--txt-col);
+    background-color: var(--bg-col);
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 3rem;
 }

@@ -1,0 +1,10 @@
+.about-cards {
+    display: grid;
+}
+
+.about-cards>div {
+    background-color: var(--card-bg-col);
+    border: 3px solid var(--card-border-col);
+    border-radius: 8px;
+    padding: 1rem;
+}
