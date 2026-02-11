@@ -37,7 +37,10 @@ export default function About() {
           <h4>let's start working together</h4>
           <div className="flex flex-column flex-gap-5">
             <p className="text-light">Contact Details</p>
-            <a href="mailto:karimdevelops@gmail.com">
+            <a
+              className="text-small text-italic"
+              href="mailto:karimdevelops@gmail.com"
+            >
               karim.develops@gmail.com
             </a>
           </div>
@@ -66,9 +69,12 @@ export default function About() {
           <p className="text-light">your time</p>
           <UserClock />
         </div>
+        <div className="theme-card">
+          <h3>pick theme</h3>
+        </div>
         <Link className="projects-card flex flex-sp-between" to="/projects">
           <h3>projects</h3>
-          <img src={openSvg} alt="open" />
+          <img src={openSvg} alt="open" height={24} width={24} />
         </Link>
         <a
           target="_blank"
@@ -76,10 +82,20 @@ export default function About() {
           className="writings-card flex flex-sp-between"
         >
           <h3>writings</h3>
-          <img src={openSvg} alt="open" />
+          <img src={openSvg} alt="open" height={24} width={24} />
         </a>
-        <div className="theme-card">
-          <h3>pick theme</h3>
+        <div>
+          <h3>
+            now{" "}
+            <a
+              target="_blank"
+              href="https://sive.rs/nowff"
+              className="text-light"
+            >
+              what's that
+            </a>
+          </h3>
+          <p className="text-small">Currently studying: BS SE</p>
         </div>
         <div className="credits-card">
           <p className="text-light">© 2026 | inspired by:</p>
