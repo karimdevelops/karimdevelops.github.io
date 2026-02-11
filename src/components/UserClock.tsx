@@ -19,7 +19,7 @@ export default function UserClock() {
   }).format(time);
 
   return (
-    <div>
+    <div className="text-time">
       <h3>{formattedTime}</h3>
     </div>
   );
