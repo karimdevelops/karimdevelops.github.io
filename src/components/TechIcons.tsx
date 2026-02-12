@@ -1,12 +1,12 @@
-import jsSvg from "../assets/javascript.svg";
-import tsSvg from "../assets/typescript.svg";
-import nodeSvg from "../assets/node.svg";
-import reactSvg from "../assets/react.svg";
-import tanstackSvg from "../assets/tanstack.svg";
-import viteSvg from "../assets/vite.svg";
-import expressSvg from "../assets/express.svg";
-import socketSvg from "../assets/socketio.svg";
-import pgSvg from "../assets/postgresql.svg";
+import jsSvg from "../assets/icons/javascript.svg";
+import tsSvg from "../assets/icons/typescript.svg";
+import nodeSvg from "../assets/icons/node.svg";
+import reactSvg from "../assets/icons/react.svg";
+import tanstackSvg from "../assets/icons/tanstack.svg";
+import viteSvg from "../assets/icons/vite.svg";
+import expressSvg from "../assets/icons/express.svg";
+import socketSvg from "../assets/icons/socketio.svg";
+import pgSvg from "../assets/icons/postgresql.svg";
 
 export default function TechIcons() {
   return (

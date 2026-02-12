@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 
 import "../styles/About.css";
-import openSvg from "../assets/open.svg";
+import openSvg from "../assets/icons/open.svg";
 import UserClock from "../components/UserClock";
 import MyClock from "../components/MyClock";
 import SocialButtons from "../components/SocialButtons";
@@ -17,7 +17,7 @@ export default function About() {
             <h2 className="text-gradient">Abdul Karim</h2>
             <p>
               a self taught developer started in 2022 turned professional mainly
-              focusing on user experience through mini interactions, and
+              focusing on user experience through micro interactions, and
               animations; with a love for backend too.
             </p>
           </div>

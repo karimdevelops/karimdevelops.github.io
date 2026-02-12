@@ -1,6 +1,6 @@
-import emailSvg from "../assets/email.svg";
-import githubSvg from "../assets/github.svg";
-import linkedinSvg from "../assets/linkedin.svg";
+import emailSvg from "../assets/icons/email.svg";
+import githubSvg from "../assets/icons/github.svg";
+import linkedinSvg from "../assets/icons/linkedin.svg";
 
 export default function SocialButtons() {
   return (
