@@ -75,7 +75,10 @@ export default function About() {
         <div className="credits-card">
           <span className="text-light text-small">
             © 2026 |{" "}
-            <a href="https://github.com/Ladvace/astro-bento-portfolio">
+            <a
+              target="_blank"
+              href="https://github.com/karimdevelops/karimdevelops.github.io"
+            >
               Bento Portfolio
             </a>
           </span>
