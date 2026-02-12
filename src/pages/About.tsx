@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 
 import "../styles/About.css";
 import openSvg from "../assets/icons/open.svg";
+import nowSvg from "../assets/icons/now.svg";
 import UserClock from "../components/UserClock";
 import MyClock from "../components/MyClock";
 import SocialButtons from "../components/SocialButtons";
@@ -16,8 +17,8 @@ export default function About() {
             <p className="text-light">hi there, i'm</p>
             <h2 className="text-gradient">Abdul Karim</h2>
             <p>
-              a self taught developer started in 2022 turned professional mainly
-              focusing on user experience through micro interactions, and
+              a self taught developer started in 2022 turned professional,
+              mainly focusing on user experience, micro interactions, and
               animations; with a love for backend too.
             </p>
           </div>
@@ -60,16 +61,19 @@ export default function About() {
           <img src={openSvg} alt="open" height={24} width={24} />
         </Link>
         <div className="now-card">
-          <h3>
-            now{" "}
-            <a
-              target="_blank"
-              href="https://sive.rs/nowff"
-              className="text-light"
-            >
-              what's that
-            </a>
-          </h3>
+          <div className="flex flex-sp-between">
+            <h3>
+              now{" "}
+              <a
+                target="_blank"
+                href="https://sive.rs/nowff"
+                className="text-light"
+              >
+                what's that
+              </a>
+            </h3>
+            <img height={24} width={24} src={nowSvg} alt="now" />
+          </div>
           <p className="text-small">doing Bachelors in SE & building stuff</p>
         </div>
         <div className="credits-card">
