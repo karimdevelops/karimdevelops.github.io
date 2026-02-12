@@ -7,6 +7,11 @@
     --card-border-col: #6f6f6f;
 }
 
+::selection {
+    color: var(--bg-col);
+    background-color: var(--txt-col);
+}
+
 * {
     margin: 0;
     padding: 0;
