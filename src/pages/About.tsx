@@ -15,7 +15,7 @@ export default function About() {
         <div className="intro-card">
           <div>
             <p className="text-light">hi there, i'm</p>
-            <h2 className="text-gradient">Abdul Karim</h2>
+            <h2 className="text-gradient font-bold">Abdul Karim</h2>
             <p>
               a self taught developer started in 2022 turned professional,
               mainly focusing on user experience, micro interactions, and
@@ -26,7 +26,7 @@ export default function About() {
           <SocialButtons />
         </div>
         <div className="skills-card">
-          <h3>Technologies I use</h3>
+          <h3 className="font-bold">Technologies I use</h3>
           <TechIcons />
         </div>
         <div className="clock-card">
@@ -36,13 +36,13 @@ export default function About() {
           <UserClock />
         </div>
         <div className="theme-card">
-          <h3>pick theme</h3>
+          <h3 className="font-bold">pick theme</h3>
         </div>
         <Link
           className="projects-card flex flex-sp-between flex-items-center"
           to="/projects"
         >
-          <h3>projects</h3>
+          <h3 className="font-bold">projects</h3>
           <img src={openSvg} alt="open" height={24} width={24} />
         </Link>
         <a
@@ -50,19 +50,19 @@ export default function About() {
           href="https://dev.to/karimdevelops"
           className="writings-card flex flex-sp-between flex-items-center"
         >
-          <h3>writings</h3>
+          <h3 className="font-bold">writings</h3>
           <img src={openSvg} alt="open" height={24} width={24} />
         </a>
         <Link
           className="contact-card flex flex-sp-between flex-items-center"
           to="/contact"
         >
-          <h3>contact</h3>
+          <h3 className="font-bold">contact</h3>
           <img src={openSvg} alt="open" height={24} width={24} />
         </Link>
         <div className="now-card">
           <div className="flex flex-sp-between">
-            <h3>
+            <h3 className="font-bold">
               now{" "}
               <a
                 target="_blank"
@@ -83,7 +83,7 @@ export default function About() {
               target="_blank"
               href="https://github.com/karimdevelops/karimdevelops.github.io"
             >
-              Bento Portfolio
+              Portfolio
             </a>
           </span>
         </div>
