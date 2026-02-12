@@ -1,48 +1,58 @@
-import jsSvg from "../assets/icons/javascript.svg";
-import tsSvg from "../assets/icons/typescript.svg";
-import shadcnSvg from "../assets/icons/shadcn.svg";
-import reactSvg from "../assets/icons/react.svg";
-import tanstackSvg from "../assets/icons/tanstack.svg";
-import viteSvg from "../assets/icons/vite.svg";
-import expressSvg from "../assets/icons/express.svg";
-import socketSvg from "../assets/icons/socketio.svg";
-import pgSvg from "../assets/icons/postgresql.svg";
-import gitSvg from "../assets/icons/git.svg";
-import figmaSvg from "../assets/icons/figma.svg";
-import dbeaverSvg from "../assets/icons/dbeaver.svg";
-import vscodeSvg from "../assets/icons/vscode.svg";
-import archSvg from "../assets/icons/archlinux.svg";
-import hyprlandSvg from "../assets/icons/hyprland.svg";
-
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
 export default function TechIcons() {
+  const techMods = import.meta.glob("../assets/icons/tech/*.svg", {
+    eager: true,
+    import: "default",
+  });
+  const misMods = import.meta.glob("../assets/icons/mis/*.svg", {
+    eager: true,
+    import: "default",
+  });
+  const techSvgs = Object.entries(techMods).map(([key, value]) => {
+    const slashI = key.lastIndexOf("-");
+    const extI = key.lastIndexOf(".");
+    const name = key.slice(slashI + 1, extI);
+    return { [name]: value };
+  });
+  const misSvgs = Object.entries(misMods).map(([key, value]) => {
+    const slashI = key.lastIndexOf("-");
+    const extI = key.lastIndexOf(".");
+    const name = key.slice(slashI + 1, extI);
+    return { [name]: value };
+  });
   return (
     <>
       <div className="grid grid-1fr-1fr-1fr grid-gap-30 grid-center">
-        <Tooltip>
-          <TooltipTrigger>
-            <img src={jsSvg} alt="javascript" />
-          </TooltipTrigger>
-          <TooltipContent>Javascript</TooltipContent>
-        </Tooltip>
-        <img src={tsSvg} alt="typescript" />
-        <img src={shadcnSvg} alt="node-ts" />
-        <img src={reactSvg} alt="react" />
-        <img src={viteSvg} alt="vite" />
-        <img src={tanstackSvg} alt="tanstack" />
-        <img src={expressSvg} alt="express" />
-        <img src={socketSvg} alt="socket.io" />
-        <img src={pgSvg} alt="postgres" />
+        {techSvgs.map((svg) => {
+          const path = Object.values(svg)[0];
+          const name = Object.keys(svg)[0];
+
+          return (
+            <Tooltip key={name}>
+              <TooltipTrigger>
+                <img src={String(path)} alt="javascript" />
+              </TooltipTrigger>
+              <TooltipContent>{name}</TooltipContent>
+            </Tooltip>
+          );
+        })}
       </div>
       <p className="text-italic text-small">Miscellanous:</p>
       <div className="grid grid-1fr-1fr-1fr grid-gap-30 grid-center">
-        <img src={gitSvg} alt="git" />
-        <img src={figmaSvg} alt="vite" />
-        <img src={dbeaverSvg} alt="vite" />
-        <img src={archSvg} alt="arch" />
-        <img src={hyprlandSvg} alt="hyprland" />
-        <img src={vscodeSvg} alt="postgres" />
+        {misSvgs.map((svg) => {
+          const path = Object.values(svg)[0];
+          const name = Object.keys(svg)[0];
+
+          return (
+            <Tooltip key={name}>
+              <TooltipTrigger>
+                <img src={String(path)} alt="javascript" />
+              </TooltipTrigger>
+              <TooltipContent>{name}</TooltipContent>
+            </Tooltip>
+          );
+        })}
       </div>
     </>
   );

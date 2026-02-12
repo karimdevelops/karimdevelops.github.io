@@ -164,13 +164,9 @@
 
 }
 
-.text-tooltip {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-}
-
 .social-icon {
-    padding: 0.5rem 1rem;
+    display: flex;
+    padding: 0.5rem 1.5rem;
     border-radius: 8px;
     box-shadow: 3px 3px 0 4px var(--txt-col);
 }
