@@ -5,14 +5,22 @@ import linkedinSvg from "../assets/icons/linkedin.svg";
 export default function SocialButtons() {
   return (
     <div className="flex flex-gap-20">
-      <a href="mailto:karim.develops@gmail.com">
-        <img className="social-icon" src={emailSvg} alt="email" />
+      <a className="social-icon" href="mailto:karim.develops@gmail.com">
+        <img src={emailSvg} alt="email" />
       </a>
-      <a target="_blank" href="https://github.com/karimdevelops">
-        <img className="social-icon" src={githubSvg} alt="github" />
+      <a
+        className="social-icon"
+        target="_blank"
+        href="https://github.com/karimdevelops"
+      >
+        <img src={githubSvg} alt="github" />
       </a>
-      <a target="_blank" href="https://linkedin.com/in/karimdevelops">
-        <img className="social-icon" src={linkedinSvg} alt="linkedin" />
+      <a
+        className="social-icon"
+        target="_blank"
+        href="https://linkedin.com/in/karimdevelops"
+      >
+        <img src={linkedinSvg} alt="linkedin" />
       </a>
     </div>
   );

@@ -14,11 +14,18 @@ import vscodeSvg from "../assets/icons/vscode.svg";
 import archSvg from "../assets/icons/archlinux.svg";
 import hyprlandSvg from "../assets/icons/hyprland.svg";
 
+import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
+
 export default function TechIcons() {
   return (
     <>
       <div className="grid grid-1fr-1fr-1fr grid-gap-30 grid-center">
-        <img src={jsSvg} alt="javascript" />
+        <Tooltip>
+          <TooltipTrigger>
+            <img src={jsSvg} alt="javascript" />
+          </TooltipTrigger>
+          <TooltipContent>Javascript</TooltipContent>
+        </Tooltip>
         <img src={tsSvg} alt="typescript" />
         <img src={shadcnSvg} alt="node-ts" />
         <img src={reactSvg} alt="react" />
