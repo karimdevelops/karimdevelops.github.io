@@ -76,7 +76,7 @@ export default function About() {
           </div>
           <p className="text-small">doing Bachelors in SE & building stuff</p>
         </div>
-        <div className="credits-card">
+        <div className="credits-card flex flex-center">
           <span className="text-light text-small">
             © 2026 |{" "}
             <a
