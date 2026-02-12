@@ -21,10 +21,7 @@ export default function About() {
               animations; with a love for backend too.
             </p>
           </div>
-          <p>
-            Feel free to reach out if you want to work with me or just for chat
-            :)
-          </p>
+          <p>Feel free to reach out for work or chat :)</p>
           <SocialButtons />
         </div>
         <div className="skills-card">
@@ -55,6 +52,13 @@ export default function About() {
           <h3>writings</h3>
           <img src={openSvg} alt="open" height={24} width={24} />
         </a>
+        <Link
+          className="contact-card flex flex-sp-between flex-items-center"
+          to="/contact"
+        >
+          <h3>contact</h3>
+          <img src={openSvg} alt="open" height={24} width={24} />
+        </Link>
         <div className="now-card">
           <h3>
             now{" "}
