@@ -176,6 +176,11 @@
     width: 32px;
 }
 
+.social-icon:hover,
+.social-icon img:hover {
+    cursor: pointer;
+}
+
 body {
     color: var(--txt-col);
     background-color: var(--bg-col);
