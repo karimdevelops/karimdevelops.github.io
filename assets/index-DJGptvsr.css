@@ -1,0 +1,1 @@
+.about-cards{max-width:1024px}.about-cards>div,.about-cards>a{background-color:var(--card-bg-col);border:2px solid transparent;border-radius:8px;padding:1rem;gap:15px;transition:all .5s}.about-cards>div:hover,.about-cards>a:hover{border-color:var(--text-col)}.about-cards>a>img{transition:transform .5s}.about-cards>a:hover>img{transform:rotate(-7deg) translateY(-5px)}
