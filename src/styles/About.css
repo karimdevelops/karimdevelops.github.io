@@ -24,39 +24,3 @@
 .about-cards>a:hover>img {
     transform: rotate(-7deg) translateY(-5px);
 }
-
-.intro-card {
-    grid-area: intro;
-}
-
-.skills-card {
-    grid-area: skills;
-}
-
-.contact-card {
-    grid-area: contact;
-}
-
-.clock-card {
-    grid-area: clock;
-}
-
-.projects-card {
-    grid-area: projects;
-}
-
-.writings-card {
-    grid-area: writings;
-}
-
-.theme-card {
-    grid-area: theme;
-}
-
-.credits-card {
-    grid-area: credits;
-}
-
-.now-card {
-    grid-area: now;
-}
