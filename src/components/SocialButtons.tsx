@@ -6,7 +6,7 @@ import linkedinSvg from "../assets/icons/linkedin.svg";
 
 export default function SocialButtons() {
   return (
-    <div className="flex flex-gap-20">
+    <div className="flex gap-5">
       <a className="social-icon" href="mailto:karim.develops@gmail.com">
         <Tooltip>
           <TooltipTrigger>

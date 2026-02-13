@@ -11,7 +11,7 @@ import TechIcons from "../components/TechIcons";
 export default function About() {
   return (
     <>
-      <div className="about-cards grid grid-gap-10 padd-1">
+      <div className="about-cards *:flex [&>div]:flex-col grid grid-gap-10 padd-1">
         <div className="intro-card">
           <div>
             <p className="text-light">hi there, i'm</p>
@@ -38,30 +38,24 @@ export default function About() {
         <div className="theme-card">
           <h3 className="font-bold">pick theme</h3>
         </div>
-        <Link
-          className="projects-card flex flex-sp-between flex-items-center"
-          to="/projects"
-        >
+        <Link className="projects-card justify-between" to="/projects">
           <h3 className="font-bold">projects</h3>
           <img src={openSvg} alt="open" height={24} width={24} />
         </Link>
         <a
           target="_blank"
           href="https://dev.to/karimdevelops"
-          className="writings-card flex flex-sp-between flex-items-center"
+          className="writings-card justify-between"
         >
           <h3 className="font-bold">writings</h3>
           <img src={openSvg} alt="open" height={24} width={24} />
         </a>
-        <Link
-          className="contact-card flex flex-sp-between flex-items-center"
-          to="/contact"
-        >
+        <Link className="contact-card justify-between" to="/contact">
           <h3 className="font-bold">contact</h3>
           <img src={openSvg} alt="open" height={24} width={24} />
         </Link>
         <div className="now-card">
-          <div className="flex flex-sp-between">
+          <div className="flex justify-between">
             <h3 className="font-bold">
               now{" "}
               <a
@@ -76,7 +70,7 @@ export default function About() {
           </div>
           <p className="text-small">doing Bachelors in SE & building stuff</p>
         </div>
-        <div className="credits-card flex flex-center">
+        <div className="credits-card items-center">
           <span className="text-light text-small">
             © 2026 |{" "}
             <a

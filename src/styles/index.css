@@ -50,48 +50,6 @@
     background-color: var(--txt-col);
 }
 
-.flex {
-    display: flex;
-    animation: fade-in 0.5s ease-in-out;
-}
-
-.flex-gap-5 {
-    gap: 5px;
-}
-
-.flex-gap-20 {
-    gap: 20px;
-}
-
-.flex-gap-30 {
-    gap: 30px;
-}
-
-.flex-gap-50 {
-    gap: 50px;
-}
-
-.flex-column {
-    flex-direction: column;
-}
-
-.flex-items-center {
-    align-items: center;
-}
-
-.flex-sp-between {
-    justify-content: space-between;
-}
-
-.flex-end {
-    justify-content: flex-end;
-}
-
-.flex-center {
-    justify-content: center;
-    align-items: center;
-}
-
 .grid {
     display: grid;
 }
@@ -127,10 +85,6 @@
 
 .grid-gap-30 {
     gap: 30px;
-}
-
-.mheight-80 {
-    min-height: 90vh;
 }
 
 .padd-1 {
