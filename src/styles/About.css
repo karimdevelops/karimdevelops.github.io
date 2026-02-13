@@ -1,12 +1,5 @@
 .about-cards {
     max-width: 1024px;
-    grid-template-areas:
-        "intro intro intro skills"
-        "intro intro intro skills"
-        "clock projects now skills"
-        "clock writings now skills"
-        "clock contact theme credits"
-    ;
 }
 
 .about-cards>div,
@@ -17,10 +10,6 @@
     padding: 1rem;
     gap: 15px;
     transition: all 0.5s;
-}
-
-.about-cards>a {
-    flex-direction: row;
 }
 
 .about-cards>div:hover,

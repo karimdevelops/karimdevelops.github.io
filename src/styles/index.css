@@ -50,47 +50,6 @@
     background-color: var(--txt-col);
 }
 
-.grid {
-    display: grid;
-}
-
-.grid-1fr-1fr {
-    grid-template-columns: 1fr 1fr;
-}
-
-.grid-1fr-1fr-1fr {
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.grid-2fr-1fr {
-    grid-template-columns: 2fr 1fr;
-}
-
-.grid-center {
-    align-items: center;
-    justify-items: center;
-}
-
-.grid-gap-5 {
-    gap: 5px;
-}
-
-.grid-gap-10 {
-    gap: 10px;
-}
-
-.grid-gap-20 {
-    gap: 20px;
-}
-
-.grid-gap-30 {
-    gap: 30px;
-}
-
-.padd-1 {
-    padding: 1rem;
-}
-
 .text-time {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5rem;

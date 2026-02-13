@@ -11,7 +11,7 @@ import TechIcons from "../components/TechIcons";
 export default function About() {
   return (
     <>
-      <div className="about-cards *:flex [&>div]:flex-col grid grid-gap-10 padd-1">
+      <div className="about-cards grid [grid-template-areas:'intro_intro_intro_skills''intro_intro_intro_skills''clock_projects_now_skills''clock_writings_now_skills''clock_contact_theme_credits'] gap-2 *:flex [&>div]:flex-col">
         <div className="intro-card">
           <div>
             <p className="text-light">hi there, i'm</p>
