@@ -14,8 +14,10 @@ export default function About() {
       <div className="about-cards grid [grid-template-areas:'intro_intro_intro_skills''intro_intro_intro_skills''clock_projects_now_skills''clock_writings_now_skills''clock_contact_theme_credits'] gap-2 *:flex [&>div]:flex-col">
         <div className="intro-card">
           <div>
-            <p className="text-light">hi there, i'm</p>
-            <h2 className="text-gradient font-bold">Abdul Karim</h2>
+            <p className="text-(--txt-light-col)">hi there, i'm</p>
+            <h2 className="inline-block bg-linear-to-r from-(--from-grad) to-(--to-grad) bg-clip-text text-transparent font-bold">
+              Abdul Karim
+            </h2>
             <p>
               a self taught developer started in 2022 turned professional,
               mainly focusing on user experience, micro interactions, and
@@ -30,9 +32,9 @@ export default function About() {
           <TechIcons />
         </div>
         <div className="clock-card">
-          <p className="text-light">my time</p>
+          <p className="text-base text-(--txt-light-col)">my time</p>
           <MyClock />
-          <p className="text-light">your time</p>
+          <p className="text-base text-(--txt-light-col)">your time</p>
           <UserClock />
         </div>
         <div className="theme-card">
@@ -61,17 +63,17 @@ export default function About() {
               <a
                 target="_blank"
                 href="https://sive.rs/nowff"
-                className="text-light"
+                className="font-normal text-(--txt-light-col) text-base"
               >
                 what's that
               </a>
             </h3>
             <img height={24} width={24} src={nowSvg} alt="now" />
           </div>
-          <p className="text-small">doing Bachelors in SE & building stuff</p>
+          <p className="text-base">doing Bachelors in SE & building stuff</p>
         </div>
         <div className="credits-card items-center">
-          <span className="text-light text-small">
+          <span className="text-base text-(--txt-light-col)">
             © 2026 |{" "}
             <a
               target="_blank"

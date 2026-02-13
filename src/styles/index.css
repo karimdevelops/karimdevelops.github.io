@@ -9,6 +9,9 @@
     --txt-light-col: #0000008a;
     --bg-col: #DFDFDF;
 
+    --from-grad: #000000;
+    --to-grad: #939393;
+
     --card-bg-col: rgba(0, 0, 0, 10%);
     --card-border-col: #6f6f6f;
     --radius: 0.625rem;
@@ -50,33 +53,6 @@
     background-color: var(--txt-col);
 }
 
-.text-time {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5rem;
-}
-
-.text-light {
-    font-size: 1.10rem;
-    font-weight: 400;
-    color: var(--txt-light-col);
-}
-
-.text-small {
-    font-size: 1rem;
-}
-
-.text-italic {
-    font-style: italic;
-}
-
-.text-gradient {
-    max-width: max-content;
-    background-image: linear-gradient(60deg, #000000 10%, #939393);
-    background-clip: text;
-    color: transparent;
-
-}
-
 .social-icon {
     display: flex;
     padding: 0.5rem 1.5rem;
@@ -104,15 +80,6 @@ body {
 
 h2 {
     font-size: 3rem;
-}
-
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: var(--txt-col);
 }
 
 @theme inline {

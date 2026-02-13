@@ -38,7 +38,7 @@ export default function TechIcons() {
           );
         })}
       </div>
-      <p className="text-italic text-small">Miscellanous:</p>
+      <p className="italic text-base">Miscellanous:</p>
       <div className="grid grid-cols-3 gap-5">
         {misSvgs.map((svg) => {
           const path = Object.values(svg)[0];

@@ -22,7 +22,7 @@ export default function UserClock() {
 
   return (
     <div className="text-time">
-      <h3 className="font-bold text-3xl">{formattedTime}</h3>
+      <h3 className="font-bold font-mono text-3xl">{formattedTime}</h3>
     </div>
   );
 }
