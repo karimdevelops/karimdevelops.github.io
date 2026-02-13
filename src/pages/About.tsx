@@ -78,6 +78,7 @@ export default function About() {
             <a
               target="_blank"
               href="https://github.com/karimdevelops/karimdevelops.github.io"
+              className="inline-block text-(--txt-col) transition duration-200 hover:-translate-y-1"
             >
               Portfolio
             </a>
