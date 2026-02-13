@@ -38,7 +38,7 @@ export default function About() {
           <UserClock />
         </div>
         <div className="[grid-area:theme]">
-          <h3 className="font-bold">pick theme</h3>
+          <h3 className="font-bold">portfolio unfinished</h3>
         </div>
         <Link className="[grid-area:projects] justify-between" to="/projects">
           <h3 className="font-bold">projects</h3>
