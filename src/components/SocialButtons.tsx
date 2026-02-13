@@ -7,38 +7,40 @@ import linkedinSvg from "../assets/icons/linkedin.svg";
 export default function SocialButtons() {
   return (
     <div className="flex gap-5">
-      <a className="social-icon" href="mailto:karim.develops@gmail.com">
-        <Tooltip>
-          <TooltipTrigger>
+      <Tooltip>
+        <TooltipTrigger>
+          <a className="social-icon" href="mailto:karim.develops@gmail.com">
             <img src={emailSvg} alt="email" />
-          </TooltipTrigger>
-          <TooltipContent>karimdevelops@gmail.com</TooltipContent>
-        </Tooltip>
-      </a>
-      <a
-        className="social-icon"
-        target="_blank"
-        href="https://github.com/karimdevelops"
-      >
-        <Tooltip>
-          <TooltipTrigger>
+          </a>
+        </TooltipTrigger>
+        <TooltipContent>karimdevelops@gmail.com</TooltipContent>
+      </Tooltip>
+
+      <Tooltip>
+        <TooltipTrigger>
+          <a
+            className="social-icon"
+            target="_blank"
+            href="https://github.com/karimdevelops"
+          >
             <img src={githubSvg} alt="github" />
-          </TooltipTrigger>
-          <TooltipContent>github</TooltipContent>
-        </Tooltip>
-      </a>
-      <a
-        className="social-icon"
-        target="_blank"
-        href="https://linkedin.com/in/karimdevelops"
-      >
-        <Tooltip>
-          <TooltipTrigger>
+          </a>
+        </TooltipTrigger>
+        <TooltipContent>github</TooltipContent>
+      </Tooltip>
+
+      <Tooltip>
+        <TooltipTrigger>
+          <a
+            className="social-icon"
+            target="_blank"
+            href="https://linkedin.com/in/karimdevelops"
+          >
             <img src={linkedinSvg} alt="linkedin" />
-          </TooltipTrigger>
-          <TooltipContent>linkedin</TooltipContent>
-        </Tooltip>
-      </a>
+          </a>
+        </TooltipTrigger>
+        <TooltipContent>linkedin</TooltipContent>
+      </Tooltip>
     </div>
   );
 }
