@@ -6,7 +6,7 @@ export const Route = createRootRoute({ component: RootLayout });
 function RootLayout() {
   return (
     <TooltipProvider>
-      <div className="flex flex-center mheight-80">
+      <div className="flex justify-center items-center min-h-[90vh]">
         <Outlet></Outlet>
       </div>
     </TooltipProvider>
