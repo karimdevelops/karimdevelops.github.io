@@ -78,7 +78,7 @@ export default function About() {
           </div>
           <p className="text-base">doing Bachelors in SE & building stuff</p>
         </div>
-        <div className="[grid-area:footer] items-center animate-in slide-in-from-bottom-200 duration-1500">
+        <div className="[grid-area:footer] items-center animate-in slide-in-from-bottom-250 duration-2000">
           <span className="text-base text-(--txt-light-col)">
             © 2026 |{" "}
             <a
