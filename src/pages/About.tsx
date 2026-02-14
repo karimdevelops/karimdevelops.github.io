@@ -27,17 +27,17 @@ export default function About() {
           <p>Feel free to reach out for work or chat :)</p>
           <SocialButtons />
         </div>
-        <div className="[grid-area:skills] animate-in slide-in-from-right duration-1000 ">
+        <div className="[grid-area:skills] animate-in slide-in-from-right-200 duration-1200 ">
           <h3 className="font-bold">Technologies I use</h3>
           <TechIcons />
         </div>
-        <div className="[grid-area:clock] animate-in slide-in-from-left duration-1000">
+        <div className="[grid-area:clock] animate-in slide-in-from-left-200 duration-1500">
           <p className="text-base text-(--txt-light-col)">my time</p>
           <MyClock />
           <p className="text-base text-(--txt-light-col)">your time</p>
           <UserClock />
         </div>
-        <div className="[grid-area:theme] animate-in slide-in-from-right duration-1000">
+        <div className="[grid-area:theme] animate-in slide-in-from-bottom-200 duration-1800">
           <h3 className="font-bold">portfolio unfinished</h3>
         </div>
         <Link
@@ -62,7 +62,7 @@ export default function About() {
           <h3 className="font-bold">contact</h3>
           <img src={openSvg} alt="open" height={24} width={24} />
         </Link>
-        <div className="[grid-area:now] animate-in slide-in-from-right duration-1000">
+        <div className="[grid-area:now] animate-in slide-in-from-right-100 duration-1200">
           <div className="flex justify-between">
             <h3 className="font-bold">
               now{" "}
@@ -78,7 +78,7 @@ export default function About() {
           </div>
           <p className="text-base">doing Bachelors in SE & building stuff</p>
         </div>
-        <div className="[grid-area:footer] items-center animate-in slide-in-from-right duration-1000">
+        <div className="[grid-area:footer] items-center animate-in slide-in-from-bottom-200 duration-1500">
           <span className="text-base text-(--txt-light-col)">
             © 2026 |{" "}
             <a
