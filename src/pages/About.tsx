@@ -12,7 +12,7 @@ export default function About() {
   return (
     <>
       <div className="about-cards grid [grid-template-areas:'intro_intro_intro_skills''intro_intro_intro_skills''clock_projects_now_skills''clock_writings_now_skills''clock_contact_theme_footer'] gap-2 *:flex [&>div]:flex-col">
-        <div className="[grid-area:intro]">
+        <div className="[grid-area:intro] animate-in slide-in-from-top duration-1000 ">
           <div>
             <p className="text-(--txt-light-col)">hi there, i'm</p>
             <h2 className="inline-block bg-linear-to-r from-(--from-grad) to-(--to-grad) bg-clip-text text-transparent font-bold">
@@ -27,36 +27,42 @@ export default function About() {
           <p>Feel free to reach out for work or chat :)</p>
           <SocialButtons />
         </div>
-        <div className="[grid-area:skills]">
+        <div className="[grid-area:skills] animate-in slide-in-from-right duration-1000 ">
           <h3 className="font-bold">Technologies I use</h3>
           <TechIcons />
         </div>
-        <div className="[grid-area:clock]">
+        <div className="[grid-area:clock] animate-in slide-in-from-left duration-1000">
           <p className="text-base text-(--txt-light-col)">my time</p>
           <MyClock />
           <p className="text-base text-(--txt-light-col)">your time</p>
           <UserClock />
         </div>
-        <div className="[grid-area:theme]">
+        <div className="[grid-area:theme] animate-in slide-in-from-right duration-1000">
           <h3 className="font-bold">portfolio unfinished</h3>
         </div>
-        <Link className="[grid-area:projects] justify-between" to="/projects">
+        <Link
+          className="[grid-area:projects] justify-between animate-in slide-in-from-bottom-200 duration-1000"
+          to="/projects"
+        >
           <h3 className="font-bold">projects</h3>
           <img src={openSvg} alt="open" height={24} width={24} />
         </Link>
         <a
           target="_blank"
           href="https://dev.to/karimdevelops"
-          className="[grid-area:writings] justify-between"
+          className="[grid-area:writings] justify-between animate-in slide-in-from-bottom-200 duration-1200"
         >
           <h3 className="font-bold">writings</h3>
           <img src={openSvg} alt="open" height={24} width={24} />
         </a>
-        <Link className="[grid-area:contact] justify-between" to="/contact">
+        <Link
+          className="[grid-area:contact] justify-between animate-in slide-in-from-bottom-200 duration-1500"
+          to="/contact"
+        >
           <h3 className="font-bold">contact</h3>
           <img src={openSvg} alt="open" height={24} width={24} />
         </Link>
-        <div className="[grid-area:now]">
+        <div className="[grid-area:now] animate-in slide-in-from-right duration-1000">
           <div className="flex justify-between">
             <h3 className="font-bold">
               now{" "}
@@ -72,7 +78,7 @@ export default function About() {
           </div>
           <p className="text-base">doing Bachelors in SE & building stuff</p>
         </div>
-        <div className="[grid-area:footer] items-center">
+        <div className="[grid-area:footer] items-center animate-in slide-in-from-right duration-1000">
           <span className="text-base text-(--txt-light-col)">
             © 2026 |{" "}
             <a
